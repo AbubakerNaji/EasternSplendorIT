@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rawaa Al-Sharq for Communications and Information Technology - Leading Technology Solutions">
+    <title>روعة الشرق | Rawaa Al-Sharq</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <div class="nav__logo">
+                <svg class="logo" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Rising Sun Circle -->
+                    <circle cx="100" cy="100" r="60" fill="url(#sunGradient)" />
+                    <!-- Sun Rays -->
+                    <g class="sun-rays">
+                        <line x1="100" y1="40" x2="100" y2="20" stroke="var(--gold)" stroke-width="3" stroke-linecap="round"/>
+                        <line x1="160" y1="100" x2="180" y2="100" stroke="var(--gold)" stroke-width="3" stroke-linecap="round"/>
+                        <line x1="100" y1="160" x2="100" y2="180" stroke="var(--gold)" stroke-width="3" stroke-linecap="round"/>
+                        <line x1="40" y1="100" x2="20" y2="100" stroke="var(--gold)" stroke-width="3" stroke-linecap="round"/>
+                        <line x1="145" y1="55" x2="158" y2="42" stroke="var(--gold)" stroke-width="2.5" stroke-linecap="round"/>
+                        <line x1="145" y1="145" x2="158" y2="158" stroke="var(--gold)" stroke-width="2.5" stroke-linecap="round"/>
+                        <line x1="55" y1="145" x2="42" y2="158" stroke="var(--gold)" stroke-width="2.5" stroke-linecap="round"/>
+                        <line x1="55" y1="55" x2="42" y2="42" stroke="var(--gold)" stroke-width="2.5" stroke-linecap="round"/>
+                    </g>
+                    <!-- Circuit Lines / Network Nodes -->
+                    <g class="circuit-lines">
+                        <!-- Horizontal lines -->
+                        <line x1="50" y1="80" x2="150" y2="80" stroke="var(--navy-blue)" stroke-width="2" opacity="0.8"/>
+                        <line x1="50" y1="120" x2="150" y2="120" stroke="var(--navy-blue)" stroke-width="2" opacity="0.8"/>
+                        <!-- Vertical lines -->
+                        <line x1="80" y1="50" x2="80" y2="150" stroke="var(--navy-blue)" stroke-width="2" opacity="0.8"/>
+                        <line x1="120" y1="50" x2="120" y2="150" stroke="var(--navy-blue)" stroke-width="2" opacity="0.8"/>
+                        <!-- Network nodes -->
+                        <circle cx="80" cy="80" r="4" fill="var(--navy-blue)"/>
+                        <circle cx="120" cy="80" r="4" fill="var(--navy-blue)"/>
+                        <circle cx="80" cy="120" r="4" fill="var(--navy-blue)"/>
+                        <circle cx="120" cy="120" r="4" fill="var(--navy-blue)"/>
+                        <!-- Diagonal connections -->
+                        <line x1="80" y1="80" x2="120" y2="120" stroke="var(--navy-blue)" stroke-width="1.5" opacity="0.6"/>
+                        <line x1="120" y1="80" x2="80" y2="120" stroke="var(--navy-blue)" stroke-width="1.5" opacity="0.6"/>
+                    </g>
+                    <!-- Gradient definitions -->
+                    <defs>
+                        <linearGradient id="sunGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:var(--deep-orange);stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:var(--gold);stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <span class="logo-text">روعة الشرق</span>
+            </div>
+            
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active" data-lang="ar">الرئيسية</a>
+                        <a href="#home" class="nav__link active" data-lang="en" style="display: none;">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link" data-lang="ar">من نحن</a>
+                        <a href="#about" class="nav__link" data-lang="en" style="display: none;">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#services" class="nav__link" data-lang="ar">خدماتنا</a>
+                        <a href="#services" class="nav__link" data-lang="en" style="display: none;">Services</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link" data-lang="ar">اتصل بنا</a>
+                        <a href="#contact" class="nav__link" data-lang="en" style="display: none;">Contact</a>
+                    </li>
+                </ul>
+                <div class="nav__close" id="nav-close">
+                    <span>✕</span>
+                </div>
+            </div>
+            
+            <div class="nav__toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <div class="lang-switcher">
+                <button class="lang-btn active" data-lang="ar">العربية</button>
+                <button class="lang-btn" data-lang="en">English</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Hero Section -->
+        <section class="hero section" id="home">
+            <div class="hero__container container">
+                <div class="hero__content">
+                    <h1 class="hero__title">
+                        <span data-lang="ar">شركة روعة الشرق للاتصالات وتقنية المعلومات</span>
+                        <span data-lang="en" style="display: none;">Rawaa Al-Sharq for Communications and Information Technology</span>
+                    </h1>
+                    <p class="hero__subtitle">
+                        <span data-lang="ar">حلول اتصالات وتقنية معلومات مبتكرة لمستقبل رقمي مشرق</span>
+                        <span data-lang="en" style="display: none;">Innovative Communications and IT Solutions for a Bright Digital Future</span>
+                    </p>
+                    <p class="hero__description">
+                        <span data-lang="ar">نحن شركة رائدة في مجال الاتصالات وتقنية المعلومات، تجمع بين الحكمة الشرقية والابتكار الحديث لتقديم حلول متطورة تلبي احتياجاتك</span>
+                        <span data-lang="en" style="display: none;">We are a leading company in communications and information technology, combining Eastern wisdom with modern innovation to deliver cutting-edge solutions that meet your needs</span>
+                    </p>
+                    <div class="hero__buttons">
+                        <a href="#services" class="btn btn--primary">
+                            <span data-lang="ar">اكتشف خدماتنا</span>
+                            <span data-lang="en" style="display: none;">Discover Our Services</span>
+                        </a>
+                        <a href="#contact" class="btn btn--secondary">
+                            <span data-lang="ar">تواصل معنا</span>
+                            <span data-lang="en" style="display: none;">Get in Touch</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero__image">
+                    <div class="hero__graphic">
+                        <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="200" cy="200" r="120" fill="url(#heroSunGradient)" opacity="0.3"/>
+                            <g class="network-graphic">
+                                <circle cx="200" cy="200" r="3" fill="var(--deep-orange)"/>
+                                <circle cx="120" cy="120" r="3" fill="var(--gold)"/>
+                                <circle cx="280" cy="120" r="3" fill="var(--gold)"/>
+                                <circle cx="120" cy="280" r="3" fill="var(--gold)"/>
+                                <circle cx="280" cy="280" r="3" fill="var(--gold)"/>
+                                <line x1="200" y1="200" x2="120" y2="120" stroke="var(--navy-blue)" stroke-width="2" opacity="0.4"/>
+                                <line x1="200" y1="200" x2="280" y2="120" stroke="var(--navy-blue)" stroke-width="2" opacity="0.4"/>
+                                <line x1="200" y1="200" x2="120" y2="280" stroke="var(--navy-blue)" stroke-width="2" opacity="0.4"/>
+                                <line x1="200" y1="200" x2="280" y2="280" stroke="var(--navy-blue)" stroke-width="2" opacity="0.4"/>
+                            </g>
+                            <defs>
+                                <linearGradient id="heroSunGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:var(--deep-orange);stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:var(--gold);stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about section" id="about">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">
+                        <span data-lang="ar">من نحن</span>
+                        <span data-lang="en" style="display: none;">About Us</span>
+                    </h2>
+                    <p class="section__subtitle">
+                        <span data-lang="ar">جسر بين الماضي والحاضر في عالم التكنولوجيا</span>
+                        <span data-lang="en" style="display: none;">A Bridge Between Past and Present in the World of Technology</span>
+                    </p>
+                </div>
+                <div class="about__content">
+                    <div class="about__text">
+                        <p data-lang="ar">
+                            شركة روعة الشرق للاتصالات وتقنية المعلومات هي شركة متخصصة في تقديم حلول مبتكرة في مجال الاتصالات وتقنية المعلومات تجمع بين الحكمة الشرقية والابتكار الحديث. نحن نؤمن بأن التكنولوجيا يجب أن تكون في خدمة الإنسان وتسهل حياته اليومية.
+                        </p>
+                        <p data-lang="en" style="display: none;">
+                            Rawaa Al-Sharq for Communications and Information Technology is a company specialized in delivering innovative solutions in communications and information technology that combine Eastern wisdom with modern innovation. We believe that technology should serve humanity and make daily life easier.
+                        </p>
+                        <p data-lang="ar">
+                            فريقنا من الخبراء والمطورين يعملون بجد لضمان أن كل مشروع ننفذه يلبي أعلى معايير الجودة والتميز.
+                        </p>
+                        <p data-lang="en" style="display: none;">
+                            Our team of experts and developers work hard to ensure that every project we deliver meets the highest standards of quality and excellence.
+                        </p>
+                    </div>
+                    <div class="about__stats">
+                        <div class="stat-card">
+                            <div class="stat-number">500+</div>
+                            <div class="stat-label">
+                                <span data-lang="ar">مشروع مكتمل</span>
+                                <span data-lang="en" style="display: none;">Completed Projects</span>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">200+</div>
+                            <div class="stat-label">
+                                <span data-lang="ar">عميل راضٍ</span>
+                                <span data-lang="en" style="display: none;">Satisfied Clients</span>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">50+</div>
+                            <div class="stat-label">
+                                <span data-lang="ar">خبير تقني</span>
+                                <span data-lang="en" style="display: none;">Tech Experts</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services section" id="services">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">
+                        <span data-lang="ar">خدماتنا</span>
+                        <span data-lang="en" style="display: none;">Our Services</span>
+                    </h2>
+                    <p class="section__subtitle">
+                        <span data-lang="ar">حلول تقنية شاملة لجميع احتياجاتك</span>
+                        <span data-lang="en" style="display: none;">Comprehensive Technology Solutions for All Your Needs</span>
+                    </p>
+                </div>
+                <div class="services__grid">
+                    <div class="service-card">
+                        <div class="service-icon">💻</div>
+                        <h3 class="service-title">
+                            <span data-lang="ar">تطوير البرمجيات</span>
+                            <span data-lang="en" style="display: none;">Software Development</span>
+                        </h3>
+                        <p class="service-description">
+                            <span data-lang="ar">نطور تطبيقات ويب وموبايل مخصصة تلبي احتياجات عملك</span>
+                            <span data-lang="en" style="display: none;">We develop custom web and mobile applications that meet your business needs</span>
+                        </p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">🌐</div>
+                        <h3 class="service-title">
+                            <span data-lang="ar">الحلول السحابية</span>
+                            <span data-lang="en" style="display: none;">Cloud Solutions</span>
+                        </h3>
+                        <p class="service-description">
+                            <span data-lang="ar">نوفر حلول سحابية آمنة وقابلة للتوسع لعملك</span>
+                            <span data-lang="en" style="display: none;">We provide secure and scalable cloud solutions for your business</span>
+                        </p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">🔒</div>
+                        <h3 class="service-title">
+                            <span data-lang="ar">الأمن السيبراني</span>
+                            <span data-lang="en" style="display: none;">Cybersecurity</span>
+                        </h3>
+                        <p class="service-description">
+                            <span data-lang="ar">نحمي بياناتك وأنظمتك من التهديدات السيبرانية</span>
+                            <span data-lang="en" style="display: none;">We protect your data and systems from cyber threats</span>
+                        </p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">📊</div>
+                        <h3 class="service-title">
+                            <span data-lang="ar">تحليل البيانات</span>
+                            <span data-lang="en" style="display: none;">Data Analytics</span>
+                        </h3>
+                        <p class="service-description">
+                            <span data-lang="ar">نحول بياناتك إلى رؤى قابلة للتنفيذ لاتخاذ قرارات أفضل</span>
+                            <span data-lang="en" style="display: none;">We turn your data into actionable insights for better decision-making</span>
+                        </p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">🤖</div>
+                        <h3 class="service-title">
+                            <span data-lang="ar">الذكاء الاصطناعي</span>
+                            <span data-lang="en" style="display: none;">Artificial Intelligence</span>
+                        </h3>
+                        <p class="service-description">
+                            <span data-lang="ar">نطبق تقنيات الذكاء الاصطناعي لتحسين عملياتك</span>
+                            <span data-lang="en" style="display: none;">We apply AI technologies to optimize your operations</span>
+                        </p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">🎨</div>
+                        <h3 class="service-title">
+                            <span data-lang="ar">تصميم تجربة المستخدم</span>
+                            <span data-lang="en" style="display: none;">UX/UI Design</span>
+                        </h3>
+                        <p class="service-description">
+                            <span data-lang="ar">نصمم واجهات مستخدم جذابة وسهلة الاستخدام</span>
+                            <span data-lang="en" style="display: none;">We design attractive and user-friendly interfaces</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact section" id="contact">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">
+                        <span data-lang="ar">اتصل بنا</span>
+                        <span data-lang="en" style="display: none;">Contact Us</span>
+                    </h2>
+                    <p class="section__subtitle">
+                        <span data-lang="ar">نحن هنا لمساعدتك. تواصل معنا اليوم</span>
+                        <span data-lang="en" style="display: none;">We're here to help. Get in touch with us today</span>
+                    </p>
+                </div>
+                <div class="contact__content">
+                    <div class="contact__info">
+                        <div class="contact__item">
+                            <div class="contact__icon">📧</div>
+                            <div class="contact__details">
+                                <h4>
+                                    <span data-lang="ar">البريد الإلكتروني</span>
+                                    <span data-lang="en" style="display: none;">Email</span>
+                                </h4>
+                                <p>info@rawaaalsharq.com</p>
+                            </div>
+                        </div>
+                        <div class="contact__item">
+                            <div class="contact__icon">📱</div>
+                            <div class="contact__details">
+                                <h4>
+                                    <span data-lang="ar">الهاتف</span>
+                                    <span data-lang="en" style="display: none;">Phone</span>
+                                </h4>
+                                <p>+966 50 123 4567</p>
+                            </div>
+                        </div>
+                        <div class="contact__item">
+                            <div class="contact__icon">📍</div>
+                            <div class="contact__details">
+                                <h4>
+                                    <span data-lang="ar">العنوان</span>
+                                    <span data-lang="en" style="display: none;">Address</span>
+                                </h4>
+                                <p>
+                                    <span data-lang="ar">الرياض، المملكة العربية السعودية</span>
+                                    <span data-lang="en" style="display: none;">Riyadh, Saudi Arabia</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="contact__form">
+                        <div class="form__group">
+                            <input type="text" class="form__input" placeholder="الاسم | Name" required>
+                        </div>
+                        <div class="form__group">
+                            <input type="email" class="form__input" placeholder="البريد الإلكتروني | Email" required>
+                        </div>
+                        <div class="form__group">
+                            <textarea class="form__input form__textarea" rows="5" placeholder="الرسالة | Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn--primary">
+                            <span data-lang="ar">إرسال</span>
+                            <span data-lang="en" style="display: none;">Send</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__brand">
+                    <div class="footer__logo">
+                        <svg class="logo" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="100" cy="100" r="60" fill="url(#footerSunGradient)" />
+                            <g class="sun-rays">
+                                <line x1="100" y1="40" x2="100" y2="20" stroke="var(--gold)" stroke-width="3" stroke-linecap="round"/>
+                                <line x1="160" y1="100" x2="180" y2="100" stroke="var(--gold)" stroke-width="3" stroke-linecap="round"/>
+                                <line x1="100" y1="160" x2="100" y2="180" stroke="var(--gold)" stroke-width="3" stroke-linecap="round"/>
+                                <line x1="40" y1="100" x2="20" y2="100" stroke="var(--gold)" stroke-width="3" stroke-linecap="round"/>
+                            </g>
+                            <g class="circuit-lines">
+                                <line x1="50" y1="80" x2="150" y2="80" stroke="var(--navy-blue)" stroke-width="2" opacity="0.8"/>
+                                <line x1="50" y1="120" x2="150" y2="120" stroke="var(--navy-blue)" stroke-width="2" opacity="0.8"/>
+                                <line x1="80" y1="50" x2="80" y2="150" stroke="var(--navy-blue)" stroke-width="2" opacity="0.8"/>
+                                <line x1="120" y1="50" x2="120" y2="150" stroke="var(--navy-blue)" stroke-width="2" opacity="0.8"/>
+                                <circle cx="80" cy="80" r="4" fill="var(--navy-blue)"/>
+                                <circle cx="120" cy="80" r="4" fill="var(--navy-blue)"/>
+                                <circle cx="80" cy="120" r="4" fill="var(--navy-blue)"/>
+                                <circle cx="120" cy="120" r="4" fill="var(--navy-blue)"/>
+                            </g>
+                            <defs>
+                                <linearGradient id="footerSunGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:var(--deep-orange);stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:var(--gold);stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <p class="footer__text">
+                        <span data-lang="ar">شركة روعة الشرق للاتصالات وتقنية المعلومات - حلول تقنية مبتكرة</span>
+                        <span data-lang="en" style="display: none;">Rawaa Al-Sharq for Communications and Information Technology - Innovative Technology Solutions</span>
+                    </p>
+                </div>
+                <div class="footer__links">
+                    <h4>
+                        <span data-lang="ar">روابط سريعة</span>
+                        <span data-lang="en" style="display: none;">Quick Links</span>
+                    </h4>
+                    <ul>
+                        <li><a href="#home">
+                            <span data-lang="ar">الرئيسية</span>
+                            <span data-lang="en" style="display: none;">Home</span>
+                        </a></li>
+                        <li><a href="#about">
+                            <span data-lang="ar">من نحن</span>
+                            <span data-lang="en" style="display: none;">About</span>
+                        </a></li>
+                        <li><a href="#services">
+                            <span data-lang="ar">خدماتنا</span>
+                            <span data-lang="en" style="display: none;">Services</span>
+                        </a></li>
+                        <li><a href="#contact">
+                            <span data-lang="ar">اتصل بنا</span>
+                            <span data-lang="en" style="display: none;">Contact</span>
+                        </a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2024 روعة الشرق | Rawaa Al-Sharq. 
+                    <span data-lang="ar">جميع الحقوق محفوظة</span>
+                    <span data-lang="en" style="display: none;">All rights reserved</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
