@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logo Export - Rawaa Al-Sharq</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+        
+        .logo-container {
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .logo-container h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #1A237E;
+            font-family: Arial, sans-serif;
+        }
+        
+        .logo-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            align-items: center;
+        }
+        
+        .logo-item {
+            text-align: center;
+        }
+        
+        .logo-item h2 {
+            margin-bottom: 15px;
+            color: #333;
+            font-family: Arial, sans-serif;
+            font-size: 18px;
+        }
+        
+        /* Different sizes for export */
+        .logo-small {
+            width: 200px;
+            height: 200px;
+        }
+        
+        .logo-medium {
+            width: 400px;
+            height: 400px;
+        }
+        
+        .logo-large {
+            width: 800px;
+            height: 800px;
+        }
+        
+        .logo-extra-large {
+            width: 1200px;
+            height: 1200px;
+        }
+        
+        svg {
+            display: block;
+        }
+        
+        .instructions {
+            margin-top: 30px;
+            padding: 20px;
+            background: #e3f2fd;
+            border-radius: 8px;
+            max-width: 600px;
+        }
+        
+        .instructions h3 {
+            margin-bottom: 10px;
+            color: #1A237E;
+        }
+        
+        .instructions ol {
+            margin-left: 20px;
+            line-height: 1.8;
+        }
+        
+        .instructions li {
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="logo-container">
+        <h1>Rawaa Al-Sharq Logo Export</h1>
+        
+        <div class="logo-wrapper">
+            <div class="logo-item">
+                <h2>Small (200x200px)</h2>
+                <svg class="logo-small" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="100" cy="100" r="60" fill="url(#sunGradient)" />
+                    <g class="sun-rays">
+                        <line x1="100" y1="40" x2="100" y2="20" stroke="#F7B801" stroke-width="3" stroke-linecap="round"/>
+                        <line x1="160" y1="100" x2="180" y2="100" stroke="#F7B801" stroke-width="3" stroke-linecap="round"/>
+                        <line x1="100" y1="160" x2="100" y2="180" stroke="#F7B801" stroke-width="3" stroke-linecap="round"/>
+                        <line x1="40" y1="100" x2="20" y2="100" stroke="#F7B801" stroke-width="3" stroke-linecap="round"/>
+                        <line x1="145" y1="55" x2="158" y2="42" stroke="#F7B801" stroke-width="2.5" stroke-linecap="round"/>
+                        <line x1="145" y1="145" x2="158" y2="158" stroke="#F7B801" stroke-width="2.5" stroke-linecap="round"/>
+                        <line x1="55" y1="145" x2="42" y2="158" stroke="#F7B801" stroke-width="2.5" stroke-linecap="round"/>
+                        <line x1="55" y1="55" x2="42" y2="42" stroke="#F7B801" stroke-width="2.5" stroke-linecap="round"/>
+                    </g>
+                    <g class="circuit-lines">
+                        <line x1="50" y1="80" x2="150" y2="80" stroke="#1A237E" stroke-width="2" opacity="0.8"/>
+                        <line x1="50" y1="120" x2="150" y2="120" stroke="#1A237E" stroke-width="2" opacity="0.8"/>
+                        <line x1="80" y1="50" x2="80" y2="150" stroke="#1A237E" stroke-width="2" opacity="0.8"/>
+                        <line x1="120" y1="50" x2="120" y2="150" stroke="#1A237E" stroke-width="2" opacity="0.8"/>
+                        <circle cx="80" cy="80" r="4" fill="#1A237E"/>
+                        <circle cx="120" cy="80" r="4" fill="#1A237E"/>
+                        <circle cx="80" cy="120" r="4" fill="#1A237E"/>
+                        <circle cx="120" cy="120" r="4" fill="#1A237E"/>
+                        <line x1="80" y1="80" x2="120" y2="120" stroke="#1A237E" stroke-width="1.5" opacity="0.6"/>
+                        <line x1="120" y1="80" x2="80" y2="120" stroke="#1A237E" stroke-width="1.5" opacity="0.6"/>
+                    </g>
+                    <defs>
+                        <linearGradient id="sunGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#FF6B35;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#F7B801;stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+            
+            <div class="logo-item">
+                <h2>Medium (400x400px)</h2>
+                <svg class="logo-medium" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="100" cy="100" r="60" fill="url(#sunGradient2)" />
+                    <g class="sun-rays">
+                        <line x1="100" y1="40" x2="100" y2="20" stroke="#F7B801" stroke-width="3" stroke-linecap="round"/>
+                        <line x1="160" y1="100" x2="180" y2="100" stroke="#F7B801" stroke-width="3" stroke-linecap="round"/>
+                        <line x1="100" y1="160" x2="100" y2="180" stroke="#F7B801" stroke-width="3" stroke-linecap="round"/>
+                        <line x1="40" y1="100" x2="20" y2="100" stroke="#F7B801" stroke-width="3" stroke-linecap="round"/>
+                        <line x1="145" y1="55" x2="158" y2="42" stroke="#F7B801" stroke-width="2.5" stroke-linecap="round"/>
+                        <line x1="145" y1="145" x2="158" y2="158" stroke="#F7B801" stroke-width="2.5" stroke-linecap="round"/>
+                        <line x1="55" y1="145" x2="42" y2="158" stroke="#F7B801" stroke-width="2.5" stroke-linecap="round"/>
+                        <line x1="55" y1="55" x2="42" y2="42" stroke="#F7B801" stroke-width="2.5" stroke-linecap="round"/>
+                    </g>
+                    <g class="circuit-lines">
+                        <line x1="50" y1="80" x2="150" y2="80" stroke="#1A237E" stroke-width="2" opacity="0.8"/>
+                        <line x1="50" y1="120" x2="150" y2="120" stroke="#1A237E" stroke-width="2" opacity="0.8"/>
+                        <line x1="80" y1="50" x2="80" y2="150" stroke="#1A237E" stroke-width="2" opacity="0.8"/>
+                        <line x1="120" y1="50" x2="120" y2="150" stroke="#1A237E" stroke-width="2" opacity="0.8"/>
+                        <circle cx="80" cy="80" r="4" fill="#1A237E"/>
+                        <circle cx="120" cy="80" r="4" fill="#1A237E"/>
+                        <circle cx="80" cy="120" r="4" fill="#1A237E"/>
+                        <circle cx="120" cy="120" r="4" fill="#1A237E"/>
+                        <line x1="80" y1="80" x2="120" y2="120" stroke="#1A237E" stroke-width="1.5" opacity="0.6"/>
+                        <line x1="120" y1="80" x2="80" y2="120" stroke="#1A237E" stroke-width="1.5" opacity="0.6"/>
+                    </g>
+                    <defs>
+                        <linearGradient id="sunGradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#FF6B35;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#F7B801;stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+            
+            <div class="logo-item">
+                <h2>Large (800x800px) - Recommended for PNG Export</h2>
+                <svg class="logo-large" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="100" cy="100" r="60" fill="url(#sunGradient3)" />
+                    <g class="sun-rays">
+                        <line x1="100" y1="40" x2="100" y2="20" stroke="#F7B801" stroke-width="3" stroke-linecap="round"/>
+                        <line x1="160" y1="100" x2="180" y2="100" stroke="#F7B801" stroke-width="3" stroke-linecap="round"/>
+                        <line x1="100" y1="160" x2="100" y2="180" stroke="#F7B801" stroke-width="3" stroke-linecap="round"/>
+                        <line x1="40" y1="100" x2="20" y2="100" stroke="#F7B801" stroke-width="3" stroke-linecap="round"/>
+                        <line x1="145" y1="55" x2="158" y2="42" stroke="#F7B801" stroke-width="2.5" stroke-linecap="round"/>
+                        <line x1="145" y1="145" x2="158" y2="158" stroke="#F7B801" stroke-width="2.5" stroke-linecap="round"/>
+                        <line x1="55" y1="145" x2="42" y2="158" stroke="#F7B801" stroke-width="2.5" stroke-linecap="round"/>
+                        <line x1="55" y1="55" x2="42" y2="42" stroke="#F7B801" stroke-width="2.5" stroke-linecap="round"/>
+                    </g>
+                    <g class="circuit-lines">
+                        <line x1="50" y1="80" x2="150" y2="80" stroke="#1A237E" stroke-width="2" opacity="0.8"/>
+                        <line x1="50" y1="120" x2="150" y2="120" stroke="#1A237E" stroke-width="2" opacity="0.8"/>
+                        <line x1="80" y1="50" x2="80" y2="150" stroke="#1A237E" stroke-width="2" opacity="0.8"/>
+                        <line x1="120" y1="50" x2="120" y2="150" stroke="#1A237E" stroke-width="2" opacity="0.8"/>
+                        <circle cx="80" cy="80" r="4" fill="#1A237E"/>
+                        <circle cx="120" cy="80" r="4" fill="#1A237E"/>
+                        <circle cx="80" cy="120" r="4" fill="#1A237E"/>
+                        <circle cx="120" cy="120" r="4" fill="#1A237E"/>
+                        <line x1="80" y1="80" x2="120" y2="120" stroke="#1A237E" stroke-width="1.5" opacity="0.6"/>
+                        <line x1="120" y1="80" x2="80" y2="120" stroke="#1A237E" stroke-width="1.5" opacity="0.6"/>
+                    </g>
+                    <defs>
+                        <linearGradient id="sunGradient3" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#FF6B35;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#F7B801;stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+        </div>
+        
+        <div class="instructions">
+            <h3>How to Export as PNG:</h3>
+            <ol>
+                <li><strong>Right-click</strong> on the logo size you want to export</li>
+                <li>Select <strong>"Inspect"</strong> or <strong>"Inspect Element"</strong></li>
+                <li>In the developer tools, find the <code>&lt;svg&gt;</code> element</li>
+                <li><strong>Right-click</strong> on the SVG element in the inspector</li>
+                <li>Select <strong>"Capture node screenshot"</strong> (Chrome/Edge) or use a screenshot tool</li>
+                <li>Alternatively, you can use online tools like <a href="https://cloudconvert.com/svg-to-png" target="_blank">CloudConvert</a> to convert the SVG file to PNG</li>
+            </ol>
+            <p style="margin-top: 15px;"><strong>Tip:</strong> The SVG file (logo.svg) can be directly converted to PNG using design software like Adobe Illustrator, Inkscape, or online converters.</p>
+        </div>
+    </div>
+</body>
+</html>
+

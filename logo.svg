@@ -1,0 +1,40 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+    <!-- Rising Sun Circle -->
+    <circle cx="100" cy="100" r="60" fill="url(#sunGradient)" />
+    <!-- Sun Rays -->
+    <g class="sun-rays">
+        <line x1="100" y1="40" x2="100" y2="20" stroke="#F7B801" stroke-width="3" stroke-linecap="round"/>
+        <line x1="160" y1="100" x2="180" y2="100" stroke="#F7B801" stroke-width="3" stroke-linecap="round"/>
+        <line x1="100" y1="160" x2="100" y2="180" stroke="#F7B801" stroke-width="3" stroke-linecap="round"/>
+        <line x1="40" y1="100" x2="20" y2="100" stroke="#F7B801" stroke-width="3" stroke-linecap="round"/>
+        <line x1="145" y1="55" x2="158" y2="42" stroke="#F7B801" stroke-width="2.5" stroke-linecap="round"/>
+        <line x1="145" y1="145" x2="158" y2="158" stroke="#F7B801" stroke-width="2.5" stroke-linecap="round"/>
+        <line x1="55" y1="145" x2="42" y2="158" stroke="#F7B801" stroke-width="2.5" stroke-linecap="round"/>
+        <line x1="55" y1="55" x2="42" y2="42" stroke="#F7B801" stroke-width="2.5" stroke-linecap="round"/>
+    </g>
+    <!-- Circuit Lines / Network Nodes -->
+    <g class="circuit-lines">
+        <!-- Horizontal lines -->
+        <line x1="50" y1="80" x2="150" y2="80" stroke="#1A237E" stroke-width="2" opacity="0.8"/>
+        <line x1="50" y1="120" x2="150" y2="120" stroke="#1A237E" stroke-width="2" opacity="0.8"/>
+        <!-- Vertical lines -->
+        <line x1="80" y1="50" x2="80" y2="150" stroke="#1A237E" stroke-width="2" opacity="0.8"/>
+        <line x1="120" y1="50" x2="120" y2="150" stroke="#1A237E" stroke-width="2" opacity="0.8"/>
+        <!-- Network nodes -->
+        <circle cx="80" cy="80" r="4" fill="#1A237E"/>
+        <circle cx="120" cy="80" r="4" fill="#1A237E"/>
+        <circle cx="80" cy="120" r="4" fill="#1A237E"/>
+        <circle cx="120" cy="120" r="4" fill="#1A237E"/>
+        <!-- Diagonal connections -->
+        <line x1="80" y1="80" x2="120" y2="120" stroke="#1A237E" stroke-width="1.5" opacity="0.6"/>
+        <line x1="120" y1="80" x2="80" y2="120" stroke="#1A237E" stroke-width="1.5" opacity="0.6"/>
+    </g>
+    <!-- Gradient definitions -->
+    <defs>
+        <linearGradient id="sunGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#FF6B35;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#F7B801;stop-opacity:1" />
+        </linearGradient>
+    </defs>
+</svg>
+
